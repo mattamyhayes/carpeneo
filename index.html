@@ -919,6 +919,47 @@
     .reveal-delay-3 { transition-delay: 0.3s; }
     .reveal-delay-4 { transition-delay: 0.4s; }
 
+
+    /* CONTACT FORM */
+    .contact-form {
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-input {
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: 'DM Mono', monospace;
+      font-size: 13px;
+      padding: 14px 18px;
+      outline: none;
+      transition: border-color 0.3s;
+      resize: vertical;
+    }
+
+    .form-input::placeholder { color: var(--muted); }
+
+    .form-input:focus { border-color: var(--accent); }
+
+    .form-submit {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      font-family: 'DM Mono', monospace;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-form { padding: 0 4px; }
+    }
+
     @media (max-width: 900px) {
       nav { padding: 20px 24px; }
       .nav-links { display: none; }
@@ -946,9 +987,6 @@
   <a href="#" class="logo">Carpe<span>Neo</span></a>
   <ul class="nav-links">
     <li><a href="#philosophy">Philosophy</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#results">Results</a></li>
     <li><a href="#contact" class="nav-cta">Contact Us</a></li>
   </ul>
 </nav>
@@ -970,7 +1008,7 @@
     </p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Start the Conversation</a>
-      <a href="#services" class="btn-secondary">Explore Services →</a>
+      <a href="#philosophy" class="btn-secondary">Our Philosophy →</a>
     </div>
   </div>
   <div class="hero-stats">
@@ -1066,277 +1104,6 @@
   </div>
 </section>
 
-<!-- SERVICES -->
-
-<section id="services" style="background: var(--obsidian);">
-  <div class="reveal" style="text-align: center; max-width: 700px; margin: 0 auto 0;">
-    <p class="section-label">What We Do</p>
-    <h2 class="section-title">End-to-end contact center<br><strong>AI transformation.</strong></h2>
-    <p class="section-body" style="margin: 0 auto;">From strategy to deployment to optimization, CarpeNeo provides the full spectrum of consulting services required to successfully migrate your telecommunications infrastructure to AI voice agents.</p>
-  </div>
-  <div class="services-grid reveal reveal-delay-1">
-    <div class="service-card">
-      <div class="service-icon">⟁</div>
-      <h3 class="service-title">AI Voice Agent Strategy & Roadmap</h3>
-      <p class="service-body">We develop a comprehensive transformation roadmap aligned to your customer journey, business objectives, and existing telecom infrastructure. This includes maturity assessments, use-case prioritization, ROI modeling, and technology selection guidance — platform-agnostic and always customer-first.</p>
-      <div class="service-tags">
-        <span class="tag">CCaaS Assessment</span>
-        <span class="tag">Roadmapping</span>
-        <span class="tag">Voice AI Strategy</span>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">◈</div>
-      <h3 class="service-title">Contact Center Migration & Implementation</h3>
-      <p class="service-body">Seamless migration from legacy on-premise telephony, IVR systems, and ACD platforms to modern cloud-native contact center solutions powered by conversational AI and voice agents. We manage risk, minimize disruption, and keep your customer experience intact throughout the transition.</p>
-      <div class="service-tags">
-        <span class="tag">IVR Migration</span>
-        <span class="tag">Cloud Telephony</span>
-        <span class="tag">ACD Modernization</span>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">⬡</div>
-      <h3 class="service-title">Conversational AI Design</h3>
-      <p class="service-body">Building voice agents that customers actually want to talk to requires deep expertise in natural language understanding, dialog design, and contact center psychology. Our team designs AI voice interactions from the customer's perspective, achieving containment rates and satisfaction scores that set new internal benchmarks.</p>
-      <div class="service-tags">
-        <span class="tag">NLU Design</span>
-        <span class="tag">Dialog Flow</span>
-        <span class="tag">Containment Rate</span>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">◎</div>
-      <h3 class="service-title">Agent Augmentation & Workforce Strategy</h3>
-      <p class="service-body">AI voice agents succeed when your human agents thrive alongside them. We design augmentation strategies that route complex interactions intelligently, give agents real-time AI assistance, and create workforce models that reduce attrition while improving CSAT across every channel.</p>
-      <div class="service-tags">
-        <span class="tag">Agent Assist</span>
-        <span class="tag">Workforce Planning</span>
-        <span class="tag">Change Management</span>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">◉</div>
-      <h3 class="service-title">Telecom Infrastructure Optimization</h3>
-      <p class="service-body">Legacy telecommunications infrastructure is often the invisible bottleneck in contact center AI performance. We audit, optimize, and modernize your underlying telecom stack — SIP trunking, network architecture, carrier relationships — to ensure your AI voice agents perform at enterprise scale.</p>
-      <div class="service-tags">
-        <span class="tag">SIP/VoIP</span>
-        <span class="tag">Network Architecture</span>
-        <span class="tag">Carrier Strategy</span>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">⬢</div>
-      <h3 class="service-title">Continuous Optimization & Governance</h3>
-      <p class="service-body">The most sophisticated AI voice agent programs are never finished — they evolve. CarpeNeo establishes the analytics frameworks, conversation review processes, model tuning cadences, and governance structures that make your contact center AI a continuously improving competitive asset.</p>
-      <div class="service-tags">
-        <span class="tag">Analytics</span>
-        <span class="tag">AI Governance</span>
-        <span class="tag">Model Tuning</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RESULTS BAR -->
-
-<div class="results-bar" id="results">
-  <div class="results-inner">
-    <div class="result-stat reveal">
-      <div class="result-num">Fortune 5</div>
-      <div class="result-label">Largest scale deployments led by our team</div>
-    </div>
-    <div class="result-stat reveal reveal-delay-1">
-      <div class="result-num">75%+</div>
-      <div class="result-label">Avg. containment rate improvement in AI voice programs</div>
-    </div>
-    <div class="result-stat reveal reveal-delay-2">
-      <div class="result-num">40%</div>
-      <div class="result-label">Average reduction in cost-per-contact after migration</div>
-    </div>
-    <div class="result-stat reveal reveal-delay-3">
-      <div class="result-num">90 Day</div>
-      <div class="result-label">Time-to-value from engagement start to first AI agent live</div>
-    </div>
-  </div>
-</div>
-
-<!-- EXPERTISE -->
-
-<section class="expertise" id="expertise">
-  <div class="expertise-layout">
-    <div class="expertise-sticky reveal">
-      <p class="section-label">Deep Expertise</p>
-      <h2 class="section-title">Built in the<br><strong>arena.</strong></h2>
-      <p class="section-body">Our consultants didn't learn contact center AI from a certification course. They built it, deployed it, and scaled it inside the world's most complex enterprise environments. That lived experience is irreplaceable.</p>
-    </div>
-    <div class="expertise-list">
-      <div class="expertise-item reveal">
-        <div class="expertise-num">01</div>
-        <div class="expertise-content">
-          <h3 class="expertise-title">Fortune 5 Contact Center Transformation Leadership</h3>
-          <p class="expertise-desc">CarpeNeo's principals have held senior leadership roles inside Fortune 5 organizations, owning end-to-end responsibility for contact center AI programs serving tens of millions of customers. We understand the scale, the politics, the compliance requirements, and the technical complexity that mid-market consulting firms have never encountered.</p>
-        </div>
-      </div>
-      <div class="expertise-item reveal reveal-delay-1">
-        <div class="expertise-num">02</div>
-        <div class="expertise-content">
-          <h3 class="expertise-title">Telecommunications & Telecom Infrastructure Mastery</h3>
-          <p class="expertise-desc">Voice AI is only as good as the telecom infrastructure beneath it. Our team brings deep expertise in enterprise telephony, SIP architecture, cloud contact center platforms, PSTN migration, and carrier strategy — ensuring your AI voice agents are built on a foundation engineered for reliability and scale.</p>
-        </div>
-      </div>
-      <div class="expertise-item reveal reveal-delay-2">
-        <div class="expertise-num">03</div>
-        <div class="expertise-content">
-          <h3 class="expertise-title">Conversational AI & Natural Language Processing</h3>
-          <p class="expertise-desc">From intent modeling and entity extraction to dialog management and voice biometrics, our team has hands-on experience with the leading conversational AI platforms. We are vendor-agnostic advisors who select and configure the right AI stack for your specific customer journey requirements.</p>
-        </div>
-      </div>
-      <div class="expertise-item reveal reveal-delay-3">
-        <div class="expertise-num">04</div>
-        <div class="expertise-content">
-          <h3 class="expertise-title">Customer Journey Architecture</h3>
-          <p class="expertise-desc">Before a single API is configured, we architect the ideal customer journey. This includes customer effort mapping, emotion analysis, interaction pattern mining, escalation path design, and persona development — ensuring every AI voice agent behavior is deliberate and customer-validated, not technology-dictated.</p>
-        </div>
-      </div>
-      <div class="expertise-item reveal">
-        <div class="expertise-num">05</div>
-        <div class="expertise-content">
-          <h3 class="expertise-title">Regulatory Compliance in Voice AI</h3>
-          <p class="expertise-desc">Contact center AI operates in heavily regulated environments — TCPA, GDPR, HIPAA, PCI-DSS, and state-level biometric data laws all apply to voice interactions. Our compliance frameworks ensure your AI voice agent program launches and operates within every applicable regulatory boundary.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY CARPEONEO -->
-
-<section class="differentiators" id="why">
-  <div class="diff-header reveal">
-    <p class="section-label">Why CarpeNeo</p>
-    <h2 class="section-title">The difference<br><strong>is experience.</strong></h2>
-    <p class="section-body">CarpeNeo was founded by practitioners who have seen what works — and what fails — at the highest levels of enterprise contact center AI. We bring that institutional knowledge to every engagement.</p>
-  </div>
-  <div class="diff-cards">
-    <div class="diff-card reveal" data-num="1">
-      <div class="diff-card-accent"></div>
-      <h3 class="diff-card-title">Customer Journey First. Always.</h3>
-      <p class="diff-card-body">We don't sell platforms. We don't earn referral fees from technology vendors. Our only mandate is designing the AI voice experience your customers deserve — which is why we start every engagement with journey mapping, not tech demos. This independence means our recommendations are always in your customers' best interest.</p>
-    </div>
-    <div class="diff-card reveal reveal-delay-1" data-num="2">
-      <div class="diff-card-accent"></div>
-      <h3 class="diff-card-title">Fortune 5 Experience, Boutique Attention</h3>
-      <p class="diff-card-body">You get senior consultants who have personally led the largest AI contact center programs in the world — not junior staff supported by a distant engagement manager. CarpeNeo's model ensures the most experienced practitioners are hands-on throughout your transformation, not just at kickoff and quarterly reviews.</p>
-    </div>
-    <div class="diff-card reveal reveal-delay-2" data-num="3">
-      <div class="diff-card-accent"></div>
-      <h3 class="diff-card-title">Telecom-Native AI Expertise</h3>
-      <p class="diff-card-body">Most AI consulting firms understand software. Few understand telecommunications. CarpeNeo sits at the intersection of enterprise telephony and conversational AI — which is precisely where contact center transformation lives. We speak both languages fluently, bridging gaps that derail otherwise well-designed programs.</p>
-    </div>
-    <div class="diff-card reveal reveal-delay-3" data-num="4">
-      <div class="diff-card-accent"></div>
-      <h3 class="diff-card-title">Outcomes, Not Deliverables</h3>
-      <p class="diff-card-body">We measure success the same way your board does: cost per contact, CSAT, first-call resolution, containment rate, and agent satisfaction. Every engagement includes clear outcome commitments, transparent measurement frameworks, and the accountability to stand behind the results we help you achieve.</p>
-    </div>
-  </div>
-</section>
-
-<!-- USE CASES / INDUSTRIES -->
-
-<section class="usecases" id="industries">
-  <div class="reveal" style="text-align:center; max-width: 600px; margin: 0 auto;">
-    <p class="section-label">Industries We Serve</p>
-    <h2 class="section-title">Where voice AI<br><strong>transforms most.</strong></h2>
-  </div>
-  <div class="uc-grid reveal reveal-delay-1">
-    <div class="uc-item">
-      <div class="uc-icon">🏦</div>
-      <h3 class="uc-title">Financial Services</h3>
-      <p class="uc-desc">Banking, insurance, and wealth management contact centers handling millions of sensitive customer interactions — transformed with compliant, secure AI voice agents that resolve, authenticate, and route with precision.</p>
-    </div>
-    <div class="uc-item">
-      <div class="uc-icon">🏥</div>
-      <h3 class="uc-title">Healthcare</h3>
-      <p class="uc-desc">Patient scheduling, triage, prescription management, and care coordination — delivered through empathetic AI voice agents that operate within HIPAA constraints and integrate with EHR systems.</p>
-    </div>
-    <div class="uc-item">
-      <div class="uc-icon">📦</div>
-      <h3 class="uc-title">Retail & eCommerce</h3>
-      <p class="uc-desc">Order management, returns, loyalty programs, and personalized service at massive scale — AI voice agents that reduce handle time and increase first-call resolution while elevating the brand experience.</p>
-    </div>
-    <div class="uc-item">
-      <div class="uc-icon">📡</div>
-      <h3 class="uc-title">Telecommunications</h3>
-      <p class="uc-desc">Telcos transforming their own customer service through AI voice — billing, technical support, service changes, and outage management handled by voice agents with deep system integration.</p>
-    </div>
-    <div class="uc-item">
-      <div class="uc-icon">✈️</div>
-      <h3 class="uc-title">Travel & Hospitality</h3>
-      <p class="uc-desc">Reservations, itinerary changes, loyalty redemptions, and real-time travel disruption management — AI voice agents that perform under pressure and preserve the premium customer relationship.</p>
-    </div>
-    <div class="uc-item">
-      <div class="uc-icon">⚡</div>
-      <h3 class="uc-title">Utilities & Energy</h3>
-      <p class="uc-desc">Outage reporting, billing inquiries, service establishment, and conservation programs handled by AI voice agents at scale — with the empathy and accuracy that utility customers demand.</p>
-    </div>
-    <div class="uc-item">
-      <div class="uc-icon">🏛️</div>
-      <h3 class="uc-title">Government & Public Sector</h3>
-      <p class="uc-desc">Citizen services, benefits administration, and agency information — accessible through AI voice agents that serve diverse populations equitably and operate within public sector compliance requirements.</p>
-    </div>
-    <div class="uc-item">
-      <div class="uc-icon">🏭</div>
-      <h3 class="uc-title">Manufacturing & Logistics</h3>
-      <p class="uc-desc">Dealer support, parts ordering, field service coordination, and supply chain communication — AI voice transforming B2B contact center operations at enterprise complexity and scale.</p>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM / CREDENTIALS -->
-
-<section class="team" id="team">
-  <div class="reveal">
-    <p class="section-label">Our People</p>
-    <h2 class="section-title">Consultants who've<br><strong>done it before.</strong></h2>
-  </div>
-  <div class="team-intro" style="margin-top: 60px;">
-    <div class="reveal">
-      <p class="section-body">CarpeNeo is built around a philosophy: the best contact center AI consulting comes from people who have lived the transformation from the inside. Our team has served in senior technology, product, and operations leadership roles at Fortune 5 enterprises, building and scaling AI voice agent programs that handle hundreds of millions of customer interactions each year.</p>
-      <p class="section-body" style="margin-top: 20px;">When you engage CarpeNeo, you're not getting generalist technology consultants who learned about voice AI last year. You're getting practitioners who made the mistakes, refined the methodologies, and achieved the outcomes at a scale most organizations will never approach.</p>
-    </div>
-    <div class="team-feature reveal reveal-delay-2">
-      <p class="team-feature-quote">"The difference between a successful voice AI deployment and an expensive mistake is almost always the same thing: whether the team started with the customer journey or with the technology."</p>
-      <p class="team-feature-attr">— CarpeNeo Founding Principle</p>
-    </div>
-  </div>
-  <div class="credentials reveal reveal-delay-1">
-    <div class="cred-item">
-      <div class="cred-logo">Fortune 5</div>
-      <div class="cred-detail">Enterprise AI Voice Programs Led</div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-logo">Telecom Native</div>
-      <div class="cred-detail">Deep Infrastructure Expertise</div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-logo">Platform Agnostic</div>
-      <div class="cred-detail">Vendor-Independent Guidance</div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-logo">Journey Led</div>
-      <div class="cred-detail">Customer Experience First</div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-logo">Outcome Driven</div>
-      <div class="cred-detail">Measurable ROI Commitments</div>
-    </div>
-    <div class="cred-item">
-      <div class="cred-logo">Compliance Ready</div>
-      <div class="cred-detail">Regulated Industry Experience</div>
-    </div>
-  </div>
-</section>
 
 <!-- CTA -->
 
@@ -1344,10 +1111,21 @@
   <p class="section-label" style="text-align:center;">Get Started</p>
   <h2 class="cta-title">Ready to seize <strong>new</strong>?</h2>
   <p class="cta-sub">Let's talk about where your contact center is today — and where AI voice agents can take it.</p>
-  <div class="cta-actions">
-    <a href="mailto:hello@carpeoneo.com" class="btn-primary">Schedule a Strategy Call</a>
-    <a href="#services" class="btn-outline">View Our Services</a>
-  </div>
+  <form class="contact-form" action="https://formsubmit.co/matthayes@carpeneo.com" method="POST">
+    <input type="hidden" name="_subject" value="New CarpeNeo Strategy Inquiry">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://www.carpeoneo.com/#contact">
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required class="form-input">
+    </div>
+    <div class="form-group">
+      <input type="tel" name="phone" placeholder="Your Phone Number" class="form-input">
+    </div>
+    <div class="form-group">
+      <textarea name="description" placeholder="Brief description of your needs" rows="4" class="form-input"></textarea>
+    </div>
+    <button type="submit" class="btn-primary form-submit">Send Message</button>
+  </form>
 </section>
 
 <!-- FOOTER -->
