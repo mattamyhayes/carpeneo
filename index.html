@@ -846,7 +846,7 @@
 
     .footer-inner {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
       gap: 60px;
     }
 
@@ -921,6 +921,18 @@
 
 
     /* CONTACT FORM */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     .contact-form {
       max-width: 520px;
       margin: 0 auto;
@@ -1116,13 +1128,16 @@
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://www.carpeoneo.com/#contact">
     <div class="form-group">
-      <input type="email" name="email" placeholder="Your Email" required class="form-input">
+      <label for="contact-email" class="sr-only">Email address</label>
+      <input type="email" id="contact-email" name="email" placeholder="Your Email" required class="form-input" aria-label="Your Email">
     </div>
     <div class="form-group">
-      <input type="tel" name="phone" placeholder="Your Phone Number" class="form-input">
+      <label for="contact-phone" class="sr-only">Phone number</label>
+      <input type="tel" id="contact-phone" name="phone" placeholder="Your Phone Number" class="form-input" aria-label="Your Phone Number">
     </div>
     <div class="form-group">
-      <textarea name="description" placeholder="Brief description of your needs" rows="4" class="form-input"></textarea>
+      <label for="contact-description" class="sr-only">Brief description</label>
+      <textarea id="contact-description" name="description" placeholder="Brief description of your needs" rows="4" class="form-input" aria-label="Brief description of your needs"></textarea>
     </div>
     <button type="submit" class="btn-primary form-submit">Send Message</button>
   </form>
@@ -1137,30 +1152,9 @@
       <p class="footer-tagline">The contact center AI consulting firm that puts customer journeys before technology. Fortune 5-proven. Journey-led. Outcome-driven.</p>
     </div>
     <div>
-      <p class="footer-col-title">Services</p>
-      <ul class="footer-links">
-        <li><a href="#services">AI Voice Strategy</a></li>
-        <li><a href="#services">Contact Center Migration</a></li>
-        <li><a href="#services">Conversational AI Design</a></li>
-        <li><a href="#services">Agent Augmentation</a></li>
-        <li><a href="#services">Telecom Optimization</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="footer-col-title">Expertise</p>
-      <ul class="footer-links">
-        <li><a href="#expertise">Voice Agent Consulting</a></li>
-        <li><a href="#expertise">CCaaS Migration</a></li>
-        <li><a href="#expertise">Customer Journey Design</a></li>
-        <li><a href="#expertise">Compliance & Governance</a></li>
-      </ul>
-    </div>
-    <div>
       <p class="footer-col-title">Company</p>
       <ul class="footer-links">
         <li><a href="#philosophy">Philosophy</a></li>
-        <li><a href="#team">Our Team</a></li>
-        <li><a href="#industries">Industries</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
